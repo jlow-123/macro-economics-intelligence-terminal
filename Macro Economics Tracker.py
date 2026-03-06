@@ -12,7 +12,7 @@ import plotly.graph_objects as go
 from sklearn.ensemble import RandomForestRegressor
 from datetime import datetime
 
-# 1. terminal configuration & theme
+# terminal configuration & theme
 st.set_page_config(page_title="Macro Economics Intelligence Terminal", layout="wide")
 
 # custom CSS
@@ -294,6 +294,7 @@ comp_results = []
 for name, data in benchmarks.items():
     sim = max(0, 100 - np.linalg.norm(np.array(inputs) - np.array(data)) * 10)
     comp_results.append({"Historical Event": name, "Similarity Score": f"{sim:.1f}%"})
+
 
 
 st.table(pd.DataFrame(comp_results))

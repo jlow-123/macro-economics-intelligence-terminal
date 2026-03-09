@@ -1,0 +1,7 @@
+Asset managers are overwhelmed by fragmented, lagging macro data. Indicators such as Official GDP Releases fail to capture real-time market velocity, leading to delayed asset allocation and increased systemic risk.
+
+This prototype transforms raw macro noise into actionable intelligence through 3 core layers. Firstly, by utilising a Random Forest Regressor to synthesise high-frequency data into a Ghost GDP Nowcast, this provides an early economic signal months before official data. Secondly, NumPy-based normalisation was used to calculate real-time Regime Probabilities (eg., Stagflation, Tech Boom). It identifies the dominant economic narrative by calculating Driver Scores, telling managers exactly which indicator is currently moving the market. The third layer is Contagion & Impact Mapping, which was built with Plotly to visualise shock transmission pathways. These signals are then mapped to Cross-Asset Tactical Stances, providing probability-weighted guidance for equities, bonds, and digital assets.
+
+For a robust institutional memory, this prototype uses Euclidean Distance Mapping to compare current conditions against historical benchmarks (eg. 2008 Global Financial Crisis), providing a quantitative Similarity Score to consider current decisions' potential impact drawn from history.
+
+Ultimately, this prototype could bridge the gap between raw data and investment committee execution for hedge funds, sovereign wealth funds, and family offices.
